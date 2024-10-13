@@ -38,7 +38,7 @@ const Bar = styled.div`
     top: 0;
     bottom: 0;
     left: 0;
-    background: ${colors.primary};
+    background: ${colors.foreground};
   }
 
   ${props =>
@@ -51,8 +51,8 @@ const Bar = styled.div`
 `
 
 const SectionButton = Button.extend`
-  color: ${colors.primary};
-  border-color: ${colors.primary};
+  color: brown;
+  border-color: brown;
   border-radius: 100px;
   padding: 5px 15px;
   display: inline-flex;
@@ -74,7 +74,7 @@ const SectionButton = Button.extend`
 
   &:hover {
     background: ${colors.primary};
-    color: ${colors.background};
+    color: ${colors.foreground};
 
     @media screen and (max-width: 850px) {
       background: transparent;

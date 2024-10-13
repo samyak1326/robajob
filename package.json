@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "node-latex": "^3.1.0",
-    "opencollective": "^1.0.3"
+    "opencollective": "^1.0.3",
+    "RobAJob": "file:"
   },
   "collective": {
     "type": "opencollective"

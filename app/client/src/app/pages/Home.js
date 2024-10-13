@@ -60,7 +60,7 @@ const Button = styled(Link)`
   height: 45px;
   margin: 7px 0;
   background: transparent;
-  color: white;
+  color: brown;
   border-radius: 100px;
   border: 1px solid ${darken(0.1, colors.primary)};
   box-shadow: 0 0 0 0 ${rgba(colors.primary, 0.7)};
@@ -213,7 +213,7 @@ const HelpButton = RoundButton.extend`
   &:hover {
     background: transparent;
     i {
-      color: ${colors.primary};
+      color: brown;
     }
   }
 
@@ -281,6 +281,13 @@ class Home extends Component<Props> {
       <Wrapper>
         <ToastContainer />
         <Main>
+        <RightSection>
+            <ResumePreview>
+              <Image src={images[0]} />
+              <Image src={images[1]} />
+              <Image src={images[2]} />
+            </ResumePreview>
+          </RightSection>
           <LeftSection>
             <Logo big />
             <PrimaryButton to="/generator" onClick={this.clearState}>
@@ -312,13 +319,6 @@ class Home extends Component<Props> {
               </HelpButton>
             </ImportRow>
           </LeftSection>
-          <RightSection>
-            <ResumePreview>
-              <Image src={images[0]} />
-              <Image src={images[1]} />
-              <Image src={images[2]} />
-            </ResumePreview>
-          </RightSection>
         </Main>
       </Wrapper>
     )

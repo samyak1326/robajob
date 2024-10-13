@@ -32,7 +32,7 @@ const Input = styled(Field)`
   border-radius: 0;
 
   &:focus {
-    color: ${colors.primary};
+    color: brown;
     border-color: ${colors.primary};
   }
 

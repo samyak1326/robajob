@@ -46,9 +46,9 @@ const Button = styled.button`
     color: #444;
 
     &:hover {
-      background: ${colors.foreground};
-      border-color: #444;
-      color: #444;
+      background: ${colors.primary};
+      border-color: ${colors.foreground};
+      color: ${colors.foreground};
       cursor: not-allowed;
     }
 

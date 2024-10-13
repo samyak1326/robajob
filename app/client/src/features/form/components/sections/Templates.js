@@ -49,14 +49,14 @@ const Image = styled.img`
 `
 
 const TemplateButton = Button.extend`
-  border-color: ${colors.primary};
-  color: ${props => (props.active ? 'white' : 'silver')};
+  border-color: ${colors.foreground};
+  color: ${props => (props.active ? 'brown' : 'brown')};
   transition: all 0.4s ease;
   padding: 10px 20px;
 
   &:hover {
     background: ${colors.primary};
-    color: ${colors.background};
+    color: ${colors.foreground};
   }
 `
 

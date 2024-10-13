@@ -28,6 +28,7 @@ const NavItem = styled(NavLink)`
   display: inline-block;
   margin-bottom: 20px;
   position: relative;
+  padding: 3px 3px;
 
   &:hover {
     &::before {
@@ -38,7 +39,8 @@ const NavItem = styled(NavLink)`
 
   &.active {
     transform: scale(1, 1);
-    color: ${colors.primary};
+    color: ${colors.foreground};
+    background: ${colors.primary};
 
     &:before {
       opacity: 1;
@@ -49,7 +51,7 @@ const NavItem = styled(NavLink)`
     transition: all 0.4s ease;
     content: '';
     height: 1px;
-    background: ${colors.primary};
+    background: ${colors.foreground};
     position: absolute;
     pointer-events: none;
     bottom: -2px;

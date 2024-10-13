@@ -70,11 +70,11 @@ const Button = styled.a`
   }
 
   &:hover {
-    color: ${colors.primary};
+    color: ${colors.foreground};
     cursor: pointer;
 
     i {
-      color: ${colors.primary};
+      color: ${colors.foreground};
     }
   }
 `
