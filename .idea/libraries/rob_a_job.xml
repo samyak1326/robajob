@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rob-a-job">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rob-a-job.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
