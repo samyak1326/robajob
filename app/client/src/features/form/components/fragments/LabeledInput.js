@@ -33,7 +33,7 @@ const Input = styled(Field)`
 
   &:focus {
     color: brown;
-    border-color: ${colors.primary};
+    border-color: ${colors.foreground};
   }
 
   &::placeholder {
@@ -53,7 +53,7 @@ const Input = styled(Field)`
     }
 
     &:focus {
-      -webkit-text-fill-color: ${colors.primary};
+      -webkit-text-fill-color: ${colors.foreground};
     }
   }
 

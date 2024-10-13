@@ -13,7 +13,7 @@ import { uploadFileAndGenerateResume } from '../../features/form/actions'
 import { clearState } from '../actions'
 import { clearPreview } from '../../features/preview/actions'
 import { hasPrevSession } from '../selectors'
-import { colors } from '../../common/theme'
+import { colors, styles } from '../../common/theme'
 import type { State } from '../types'
 
 const Wrapper = styled.div`
@@ -43,10 +43,12 @@ const Section = styled.section`
 const LeftSection = Section.extend`
   width: 40%;
   flex-direction: column;
+  background: ${colors.background};
 `
 
 const RightSection = Section.extend`
   width: 60%;
+  background: ${styles.gradient};
 `
 
 const Button = styled(Link)`
@@ -283,9 +285,9 @@ class Home extends Component<Props> {
         <Main>
         <RightSection>
             <ResumePreview>
-              <Image src={images[0]} />
-              <Image src={images[1]} />
-              <Image src={images[2]} />
+              <Image src={images[7]} />
+              <Image src={images[8]} />
+              <Image src={images[9]} />
             </ResumePreview>
           </RightSection>
           <LeftSection>

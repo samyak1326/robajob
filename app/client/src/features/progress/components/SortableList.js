@@ -28,7 +28,7 @@ const NavItem = styled(NavLink)`
   display: inline-block;
   margin-bottom: 20px;
   position: relative;
-  padding: 3px 3px;
+  padding: 4px 4px;
 
   &:hover {
     &::before {
@@ -41,6 +41,7 @@ const NavItem = styled(NavLink)`
     transform: scale(1, 1);
     color: ${colors.foreground};
     background: ${colors.primary};
+    border-radius: 25px;
 
     &:before {
       opacity: 1;
@@ -64,7 +65,7 @@ const NavItem = styled(NavLink)`
 const Handle = styled.span`
   position: relative;
   right: 25px;
-  color: ${colors.primary};
+  color: ${colors.foreground};
   opacity: ${props => (props.disabled ? '0' : '1')};
   cursor: grab;
   user-select: none;

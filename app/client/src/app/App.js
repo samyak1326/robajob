@@ -8,7 +8,7 @@ import Loadable from 'react-loadable'
 import { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 import { ScrollToTop, Loader } from '../common/components'
-import { colors } from '../common/theme'
+import { colors, styles } from '../common/theme'
 import NexaBold from './assets/nexa-bold.otf'
 import NexaLight from './assets/nexa-light.otf'
 
@@ -24,7 +24,7 @@ injectGlobal`
     padding: 0;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 0.95em;
-    background: ${colors.background};
+    background: ${styles.gradient};
     color: ${colors.foreground};
   }
 

@@ -2,64 +2,59 @@
  * @flow
  */
 
-import styled from 'styled-components'
-import { colors } from '../../common/theme'
-import { lighten, darken } from 'polished'
+import styled from 'styled-components';
+import { colors } from '../../common/theme';
+import { lighten, darken } from 'polished';
 
 const Button = styled.button`
   display: inline-block;
-  padding: 5px 10px;
-  border: 1px solid;
-  border-color: ${colors.primary};
-  border-radius: 2px;
-  //background: transparent;
-  color: ${colors.primary};
-  margin-right: 10px;
-  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid ${colors.primary};
+  border-radius: 4px;
+  background-color: transparent;
+  color: ${colors.foreground};
+  margin: 10px 10px 0 0;
   outline: none;
-  transition: all 0.4s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
   user-select: none;
 
   &:focus:not(:hover) {
-    background-color: ${darken(0.4, colors.primary)};
+    background-color: ${darken(0.1, colors.primary)};
     border-color: ${lighten(0.2, colors.primary)};
-    color: ${lighten(0, colors.primary)};
+    color: ${lighten(0.5, colors.foreground)};
   }
 
   &:hover {
     background: ${colors.primary};
-    color: ${colors.foreground};
+    color: ${colors.background};
     cursor: pointer;
-
-    @media screen and (max-width: 850px) {
-      //background: transparent;
-      color: ${colors.primary};
-    }
   }
 
   i {
-    color: ${colors.primary};
+    color: ${colors.foreground};
   }
 
   &:disabled {
-    border-color: #444;
-    color: #444;
+    border-color: #ccc;
+    color: #ccc;
+    background-color: #f0f0f0;
 
     &:hover {
-      background: ${colors.primary};
-      border-color: ${colors.foreground};
-      color: ${colors.foreground};
+      background: ${colors.background};
+      border-color: #444;
+      color: #444;
       cursor: not-allowed;
     }
 
     i {
-      color: #090;
-    }
-
-    &:active {
-      position: initial;
+      color: #999;
     }
   }
-`
 
-export default Button
+  @media screen and (max-width: 850px) {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+`;
+
+export default Button;

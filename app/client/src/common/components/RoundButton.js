@@ -2,22 +2,22 @@
  * @flow
  */
 
-import Button from './Button'
-import { colors } from '../theme'
+import Button from './Button';
+import { colors } from '../theme';
 
 const RoundButton = Button.extend`
   display: flex;
-  display: inline-block;
   justify-content: center;
   align-items: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-right: 5px;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  padding: 0px;
+  width: 40px; // Increased size for better usability
+  height: 40px;
+  padding: 0;
   background: ${colors.background};
+  border: 2px solid ${colors.primary}; // Added border for definition
 
   i {
     transition: all 0.4s ease;
@@ -26,14 +26,15 @@ const RoundButton = Button.extend`
   &:disabled {
     &:hover {
       background: ${colors.background};
-      border-color: #444;
-      color: #444;
+      border-color: #ccc;
+      color: #ccc;
       cursor: default;
     }
   }
 
   &:hover {
-    color: ${colors.background};
+    background: ${colors.primary}; // Change background on hover
+    color: ${colors.background}; // Change text color on hover
 
     i {
       color: ${colors.background};
@@ -44,6 +45,6 @@ const RoundButton = Button.extend`
     outline-color: ${colors.primary};
     border-color: ${colors.primary};
   }
-`
+`;
 
-export default RoundButton
+export default RoundButton;

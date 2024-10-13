@@ -10,7 +10,7 @@ const Bars = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: ${colors.primary};
+  background: ${colors.foreground};
   animation: ${animations.load} 1s infinite ease-in-out;
   width: 1em;
   height: 4em;

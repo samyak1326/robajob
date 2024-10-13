@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import { arrayMove } from 'react-sortable-hoc'
 import styled from 'styled-components'
 import SortableList from './SortableList'
-import { PrimaryButton } from '../../../common/components'
+import { Logo, PrimaryButton } from '../../../common/components'
 import { setSectionOrder, setProgress } from '../actions'
 import { sizes, colors } from '../../../common/theme'
 import type { Section } from '../../../common/types'
@@ -74,6 +74,10 @@ class SideNav extends Component<Props> {
 
     return (
       <Aside>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Logo />
         <Nav>
           <SortableList
             useDragHandle

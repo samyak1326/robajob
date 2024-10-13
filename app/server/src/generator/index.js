@@ -65,7 +65,7 @@ function generateSourceCode(formData: SanitizedValues): Transform {
 
 function makeReadme(template: number, cmd: string = 'pdflatex'): string {
   return stripIndent`
-    # Resumake Template ${template}
+    # RobAJob Template ${template}
 
     ## Usage
     To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:
